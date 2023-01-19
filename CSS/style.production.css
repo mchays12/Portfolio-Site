@@ -1,0 +1,385 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body{
+	background-color: rgb(220, 220, 220);
+	font-family: 'ABeeZee', san-serif;
+	font-weight: 400;
+	font-size: 16px;
+	/* Sets the font size to 16px */
+	line-height: 1.6;
+	/*sets the line height to 1.6 */
+}
+
+:root { /*color variable*/ /*primary-color*/ /*secondary-color1*/ /*secondary-color2*/ /*visited-color*/ /*sun primary*/ /*sun secondary1*/ /*sun secondary2*/
+}
+:root { /*font variable*/
+}
+h1 {
+	font-size: 30px;
+	font-weight: 700px;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 700px;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 700px;
+	font-style: italic;
+}
+	
+a {
+	color: #696969;
+}
+
+a:visited {
+	/* visited link */
+	color: #696969;
+}
+
+a:hover, a:focus {
+	/* No underlining text when hovering over a link */
+	text-decoration: none;
+}
+
+a:active {
+	/* select link */
+	color: #696969;
+}
+
+label:visited {
+	/* visited link */
+	color: #FFFFF0;
+}
+
+label:hover, label:focus {
+	/* No underlining text when hovering over a link */
+	text-decoration: none;
+	cursor:pointer;
+}
+
+label:active {
+	/* select link */
+	color: #F0FFFF;
+}
+
+input:visited {
+	/* visited link */
+	color: #FFFFF0;
+}
+
+input:hover, input:focus {
+	/* No underlining text when hovering over a link */
+	text-decoration: none;
+	cursor:pointer;
+}
+
+input:active {
+	/* select link */
+	color: #696969;
+}
+
+button {
+	/* overwrites browser defaults and resets the border */
+	border: none;
+	/* takes the font from the outer container */
+	font-family: inherit;
+	/* styles the background color, font color, and text decoration (underline, etc.) of the button */
+	background-color: #F0FFFF;
+	color: #FFF8DC;
+	text-decoration: none;
+	/* adds spacing to the button (will be discussed) */
+	padding: 10px;
+	border-radius: 3px;
+	/*gives the button a bottom border of 2px, a type of solid, and a color in RGBA format */
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	-webkit-transition: opacity, 0.9s, font-size 1s;
+	-o-transition: opacity, 0.9s, font-size 1s;
+	transition: opacity, 0.9s, font-size 1s;
+
+}
+
+.button {
+	/* overwrites browser defaults and resets the border */
+	border: none;
+	/* takes the font from the outer container */
+	font-family: inherit;
+	/* styles the background color, font color, and text decoration (underline, etc.) of the button */
+	background-color: #F0FFFF;
+	color: #FFF8DC;
+	text-decoration: none;
+	/* adds spacing to the button (will be discussed) */
+	padding: 10px;
+	border-radius: 3px;
+	/*gives the button a bottom border of 2px, a type of solid, and a color in RGBA format */
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	-webkit-transition: opacity, 0.9s, font-size 1s;
+	-o-transition: opacity, 0.9s, font-size 1s;
+	transition: opacity, 0.9s, font-size 1s;
+
+}
+
+button:hover {
+	/* lets the mouse appear as a hand when it hovers over the button */
+	cursor: pointer;
+	/* reduces the opacity of the button to 80% */
+	opacity: 0.8;
+	font-size: 18px;
+	background-color: #696969;
+	
+}
+
+.button:hover {
+	/* lets the mouse appear as a hand when it hovers over the button */
+	cursor: pointer;
+	/* reduces the opacity of the button to 80% */
+	opacity: 0.8;
+	font-size: 18px;
+	background-color: #696969;
+	
+}
+
+button:focus {
+	/* lets the mouse appear as a hand when it hovers over the button */
+	cursor: pointer;
+	/* reduces the opacity of the button to 80% */
+	opacity: 0.8;
+	font-size: 18px;
+	background-color: #696969;
+	
+}
+
+.button:focus {
+	/* lets the mouse appear as a hand when it hovers over the button */
+	cursor: pointer;
+	/* reduces the opacity of the button to 80% */
+	opacity: 0.8;
+	font-size: 18px;
+	background-color: #696969;
+	
+}
+
+.button_secondary {
+	background-color: #696969;
+	color: #FFFFF0;
+}
+
+.navigation-list_item--active {
+	text-decoration: none;
+}
+
+.navigation-list {
+	list-style-type: none;
+}
+
+.navigation-list li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.profile {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.profile_portrait {
+	float: left;
+	width: 350px;
+	margin-right: 40px;
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+}
+
+.profile_text {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 100px;
+	        flex: 1 1 100px;
+}
+
+.page-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	padding: 20px;
+}
+
+.page-header_item {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 0px;
+	        flex: 0 1 0;
+}
+
+.page-header_item:last-child {
+	-webkit-box-flex:1;
+	    -ms-flex-positive:1;
+	        flex-grow:1;
+	text-align: right;
+}
+
+.page-footer {
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.project-list {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.project-list_item {
+	background: #FFFFF0;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+@media all and (max-width: 500px) {
+	.project-list {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+	.project-list {
+		-ms-grid-columns: 1fr 20px 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (max-width: 750px) {
+	.project-list {
+		grid-gap: 10px
+	}
+	.project-list_item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
+}
+
+@-webkit-keyframes color-change {
+	0% {
+		fill: #cc4c00;
+	}
+	50% {
+		fill: #ec9400;
+	}
+	100% {
+		fill: #ecc600;
+	}
+}
+
+@keyframes color-change {
+	0% {
+		fill: #cc4c00;
+	}
+	50% {
+		fill: #ec9400;
+	}
+	100% {
+		fill: #ecc600;
+	}
+}
+
+@-webkit-keyframes cloud-move {
+	from {
+		-webkit-transform: translate(0, 50px);
+		        transform: translate(0, 50px)
+	}
+	to {
+		-webkit-transform: translate(200px, 50px);
+		        transform: translate(200px, 50px)
+	}
+}
+
+@keyframes cloud-move {
+	from {
+		-webkit-transform: translate(0, 50px);
+		        transform: translate(0, 50px)
+	}
+	to {
+		-webkit-transform: translate(200px, 50px);
+		        transform: translate(200px, 50px)
+	}
+}
+
+@-webkit-keyframes cloud-move-reverse {
+	from {
+		-webkit-transform: translate(446px, 48px);
+		        transform: translate(446px, 48px);
+	}
+	to {
+		-webkit-transform: translate(100px, 48px);
+		        transform: translate(100px, 48px);
+	}
+}
+
+@keyframes cloud-move-reverse {
+	from {
+		-webkit-transform: translate(446px, 48px);
+		        transform: translate(446px, 48px);
+	}
+	to {
+		-webkit-transform: translate(100px, 48px);
+		        transform: translate(100px, 48px);
+	}
+}
+
+.cloud-front {
+	-webkit-animation-duration: 30s;
+	        animation-duration: 30s;
+	-webkit-animation-name: cloud-move;
+	        animation-name: cloud-move;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	        animation-direction: alternate;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	/* can also be written as animation: 30s cloud-move infinite alternate linear; */
+}
+
+.cloud-back {
+	-webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+	        animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.sun {
+	-webkit-animation: 4s color-change infinite alternate linear;
+	        animation: 4s color-change infinite alternate linear;
+}
+
+.ellipse-front {
+	-webkit-animation: 4s color-change infinite alternate linear;
+	        animation: 4s color-change infinite alternate linear;
+}
