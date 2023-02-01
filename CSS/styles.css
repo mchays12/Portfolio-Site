@@ -1,5 +1,5 @@
 body{
-	background-color: rgb(220, 220, 220);
+	background-color: var(--white);
 	font-family: 'ABeeZee', san-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -9,13 +9,14 @@ body{
 }
 
 :root { /*color variable*/
-	--ivory: #FFFFF0; /*primary-color*/
-	--azure: #F0FFFF; /*secondary-color1*/
-	--dim-grey: #696969; /*secondary-color2*/
+	--white: #FFFFFF; /*background-color*/
+	--experience-background: #023e66d0; /*primary-color*/
+	--azure: #ffffff; /*secondary-color1*/
+	--button-background: #085528; /*secondary-color2*/
 	--cornsilk: #FFF8DC; /*visited-color*/
 	--sun-red: #cc4c00; /*sun primary*/
 	--sun-orange: #ec9400; /*sun secondary1*/
-	--sun-yellow: #ecc600; /*sun secondary2*/
+	--sun-yellow: #b500eca1; /*sun secondary2*/
 }
 :root { /*font variable*/
 	--h1_font: 30px;
@@ -103,15 +104,15 @@ button, .button {
 	/* takes the font from the outer container */
 	font-family: inherit;
 	/* styles the background color, font color, and text decoration (underline, etc.) of the button */
-	background-color: var(--azure);
-	color: var(--cornsilk);
+	background-color: var(--button-background);
+	color: var(--white);
 	text-decoration: none;
 	/* adds spacing to the button (will be discussed) */
 	padding: 10px;
 	border-radius: 3px;
 	/*gives the button a bottom border of 2px, a type of solid, and a color in RGBA format */
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-	transition: opacity, 0.9s, font-size 1s;
+	transition: opacity, 0.9s, font-size .4s;
 
 }
 
@@ -120,15 +121,15 @@ button:focus, .button:focus {
 	/* lets the mouse appear as a hand when it hovers over the button */
 	cursor: pointer;
 	/* reduces the opacity of the button to 80% */
-	opacity: 0.8;
+	opacity: 0.4;
 	font-size: 18px;
-	background-color: var(--dim-grey);
+	background-color: var(--button-background);
 	
 }
 
 .button_secondary {
-	background-color: var(--dim-grey);
-	color: var(--ivory);
+	background-color: var(--button-background);
+	color: var(--white);
 }
 
 .navigation-list_item--active {
@@ -142,6 +143,23 @@ button:focus, .button:focus {
 .navigation-list li {
 	display: inline-block;
 	margin-left: 15px;
+}
+
+.work-header {
+	text-align: center;
+	font-size: 60px;
+}
+
+.work-header1 {
+	text-align: center;
+	
+}
+
+.work-link {
+	text-align: center;
+	margin:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .profile {
@@ -191,13 +209,17 @@ button:focus, .button:focus {
 .project-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
+	grid-gap: 40px;
 }
 
 .project-list_item {
-	background: var(--ivory);
+	flex-direction: column;
+	background: var(--experience-background);
 	padding: 20px;
-	border-radius: 10px;
+	border-radius: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
 }
 
 @media all and (max-width: 500px) {
