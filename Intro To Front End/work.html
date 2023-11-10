@@ -2,97 +2,218 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>First Site</title>
-  <link rel="short icon" href="https://www.wikipedia.org/static/favicon/wikipedia.ico">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" >
-  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First Site</title>
+	<link rel="short icon" href="https://www.wikipedia.org/static/favicon/wikipedia.ico">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap">
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
 
 <body>
- 
-<header class="page-header"><!--Includes logo and navigation-->
-  <img src="IMG/logo.svg" class="page-header_item" width="30" height="30" alt="personal logo of Matthew Hays, a picture of Matthew Hays' face">
-  <nav class="main-navigation page-header_item">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation">
-        <a href="index.html" role="menuitem" class="navigation-list_item" target="blank">Home</a>
-      </li>
-	  <li role="presentation">
-        <a href="about.html" role="menuitem" class="navigation-list_item" target="blank">About Me</a>
-	  </li>
-      <li role="presentation">
-		<a href="work.html" role="menuitem" class="navigation-list_item--active" target="blank"> My Work </a>
-      </li>
-	  <li role="presentation">
-        <a href="contact.html" role="menuitem" class="navigation-list_item" target="blank">Contact</a>
-	  </li>
-	</ul>
-  </nav>
-</header>
-  
-<section>
-  <h1 class="work-header">Work</h1>
-  <div class="project-list">
-    <div class="project-list_item">
-	  <h2 class="work-header1">Portfolio Site</h2>
-	  <p>
-	    During this project, I delved into the fundamentals of frontend web development as I crafted a portfolio website to present both my identity and my various projects. Simultaneously, I embarked on a journey to grasp the essential principles of agile project management, which enabled me to refine my personal objectives. I achieved this by breaking them into manageable milestones and efficiently tracking progress through timelines and checkboxes.
-	  </p>
-	  <a class="work-link" href="https://github.com/mchays12/Portfolio-Site"> Check out my work on Github </a>
-	</div>
-    <div class="project-list_item">
-	  <h2 class="work-header1">Pokemon App</h2>
-	  <p>
-	    As part of this project, I developed a compact web application centered around Pokémon, utilizing HTML, CSS, and JavaScript. The application fetches data from an external Pokémon API and provides users with the ability to explore specific data attributes in depth. Users are initially presented with a list of Pokémon names. Upon selecting a Pokémon from the list, the application displays comprehensive information, including height, weight, types, abilities, and an accompanying image for that particular Pokémon.
-	  </p>
-	  <a class="work-link" href="https://github.com/mchays12/simple-js-app"> Check out my work on Github </a>
-	</div>
-	<div class="project-list_item">
-	  <h2 class="work-header1">Movies Api</h2>
-	  <p>
-	    Within this project, I created the server-side component of a “movies” web application that provides users with access to information about different movies and makes it possible for users to sign up, update their personal information and create a list of their favourite movies. 	
-	  </p>
-	  <a class="work-link" href="https://github.com/mchays12/MyFlix"> Check out my work on Github </a>
-	</div>
-	<div class="project-list_item">
-	  <h2 class="work-header1">MyFlix App</h2>
-	  <p>
-	    You'll discover the client-side frontend for my React-based RESTful API right here. I designed the interface through which users interact with the server-side, enabling them to initiate requests and seamlessly receive responses. Furthermore, I've incorporated multiple interface views created with the React library, all adept at managing data via the REST API endpoints I had previously established.
-	  </p>
-	  <a class="work-link" href="https://github.com/mchays12/myFlix-client"> Check out my work on Github </a>
-	</div>
-	<div class="project-list_item">
-	  <h2 class="work-header1">Meet App</h2>
-	  <p>
-	    Here, I've developed a serverless, progressive web application named MEET, designed to retrieve information from the Google Calendar API.
-	  </p>
-	  <a class="work-link" href="https://github.com/mchays12/meet"> Check out my work on Github </a>
-	</div>
-	<div class="project-list_item">
-	  <h2 class="work-header1">Mobile Web App 6</h2>
-	  <p>
-	    This is another place holder for an application I have not created yet. It will be done using HTML, CSS, and JavaScript
-	  </p>
-	  <a class="work-link" href="#"> Check out my work on Github </a>
-	</div>
-  </div>
-  </section>
+	<header class="page-header">
+		<nav id="navbar" class="main-navigation page-header_item">
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a href="about.html" role="menuitem" class="navigation-list_item navigation-list_item" target="blank">
+						About Me
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="work.html" role="menuitem" class="navigation-list_item" target="blank">My Work</a>
+				</li>
+				<li role="presentation">
+					<a href="contact.html" role="menuitem" class="navigation-list_item" target="blank">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-  <footer class="page-footer"> <!--socials here-->
-    <p>find me on</p>
-    <div class="social-media">
-      <img src="IMG/githublogo.svg" alt="Github">
-      <img src="IMG/twitterlogo.svg" alt="twitter">
-      <img src="IMG/linkedinlogo.svg" alt="LinkedIn">
-    </div>
-  </footer>
-  
-  <script src="JS/tota11y.min.js"></script>
+	<section>
+		<h1 class="work-header">Work</h1>
+		<div class="project-list">
+			<div class="project-list_item">
+				<h2 class="work-header1">Meet App</h2>
+				<img src="./IMG/meet_image.png" class="project-img" alt="meet app screenshot">
+				<p class="work-description">
+					During this project, I delved into the fundamentals of frontend web development as I crafted a portfolio
+					website to present both my identity and my various projects. Simultaneously, I embarked on a journey to grasp
+					the essential principles of agile project management, which enabled me to refine my personal objectives. I
+					achieved this by breaking them into manageable milestones and efficiently tracking progress through timelines
+					and checkboxes.
+				</p>
+				<br />
+				<p class="work-description">
+					The technologies used for this app were as follows:
+				</p>
+				<br />
+				<ul>
+					<li>
+						Tech 1
+					</li>
+					<li>
+						Tech 2
+					</li>
+					<li>
+						Tech 3
+					</li>
+				</ul>
+				<br />
+				<a class="work-link" href="https://github.com/mchays12/meet"> Check out my work on Github </a>
+			</div>
+			<div class="project-list_item">
+				<h2 class="work-header1">Pokemon App</h2>
+				<img src="./IMG/pokedex_img.png" class="project-img" alt="meet app screenshot">
+				<p class="work-description">
+					As part of this project, I developed a compact web application centered around Pokémon, utilizing HTML, CSS,
+					and JavaScript. The application fetches data from an external Pokémon API and provides users with the ability
+					to explore specific data attributes in depth. Users are initially presented with a list of Pokémon names. Upon
+					selecting a Pokémon from the list, the application displays comprehensive information, including height,
+					weight, types, abilities, and an accompanying image for that particular Pokémon.
+				</p>
+				<br />
+				<p class="work-description">
+					The technologies used for this app were as follows:
+				</p>
+				<br />
+				<ul>
+					<li>
+						Tech 1
+					</li>
+					<li>
+						Tech 2
+					</li>
+					<li>
+						Tech 3
+					</li>
+				</ul>
+				<br />
+				<a class="work-link" href="https://github.com/mchays12/Pokedex_App"> Check out my work on Github </a>
+			</div>
+			<div class="project-list_item">
+				<h2 class="work-header1">MyFlix React App</h2>
+				<img src="./IMG/myFlix_react_img.png" class="project-img" alt="meet app screenshot">
+				<p>
+					Within this project, I created the server-side component of a “movies” web application that provides users
+					with access to information about different movies and makes it possible for users to sign up, update their
+					personal information and create a list of their favourite movies.
+				</p>
+				<br />
+				<p class="work-description">
+					The technologies used for this app were as follows:
+				</p>
+				<br />
+				<ul>
+					<li>
+						Tech 1
+					</li>
+					<li>
+						Tech 2
+					</li>
+					<li>
+						Tech 3
+					</li>
+				</ul>
+				<br />
+				<a class="work-link" href="https://github.com/mchays12/MyFlix"> Check out my work on Github </a>
+			</div>
+			<div class="project-list_item">
+				<h2 class="work-header1">MyFlix Angular App</h2>
+				<img src="./IMG/myFlix_angular_img.png" class="project-img" alt="meet app screenshot">
+				<p>
+					You'll discover the client-side frontend for my React-based RESTful API right here. I designed the interface
+					through which users interact with the server-side, enabling them to initiate requests and seamlessly receive
+					responses. Furthermore, I've incorporated multiple interface views created with the React library, all adept
+					at managing data via the REST API endpoints I had previously established.
+				</p>
+				<br />
+				<p class="work-description">
+					The technologies used for this app were as follows:
+				</p>
+				<br />
+				<ul>
+					<li>
+						Tech 1
+					</li>
+					<li>
+						Tech 2
+					</li>
+					<li>
+						Tech 3
+					</li>
+				</ul>
+				<br />
+				<a class="work-link" href="https://github.com/mchays12/myFlix-client"> Check out my work on Github </a>
+			</div>
+			<div class="project-list_item">
+				<h2 class="work-header1">Chit Chat App</h2>
+				<img src="./IMG/StartTalkin.jpg" class="project-img" alt="meet app screenshot">
+				<p>
+					Here, I've developed a serverless, progressive web application named MEET, designed to retrieve information
+					from the Google Calendar API.
+				</p>
+				<br />
+				<p class="work-description">
+					The technologies used for this app were as follows:
+				</p>
+				<br />
+				<ul>
+					<li>
+						Tech 1
+					</li>
+					<li>
+						Tech 2
+					</li>
+					<li>
+						Tech 3
+					</li>
+				</ul>
+				<br />
+				<a class="work-link" href="https://github.com/mchays12/meet"> Check out my work on Github </a>
+			</div>
+			<div class="project-list_item">
+				<h2 class="work-header1">To Do App</h2>
+				<img src="./IMG/ToDoApp_img.png" class="project-img" alt="meet app screenshot">
+				<p>
+					This is another place holder for an application I have not created yet. It will be done using HTML, CSS, and
+					JavaScript
+				</p>
+				<br />
+				<p class="work-description">
+					The technologies used for this app were as follows:
+				</p>
+				<br />
+				<ul>
+					<li>
+						Tech 1
+					</li>
+					<li>
+						Tech 2
+					</li>
+					<li>
+						Tech 3
+					</li>
+				</ul>
+				<br />
+				<a class="work-link" href="#"> Check out my work on Github </a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="page-footer"> <!--socials here-->
+		<p>find me on</p>
+		<div class="social-media">
+			<img src="IMG/githublogo.svg" alt="Github">
+			<img src="IMG/twitterlogo.svg" alt="twitter">
+			<img src="IMG/linkedinlogo.svg" alt="LinkedIn">
+		</div>
+	</footer>
+
+	<script src="JS/tota11y.min.js"></script>
 </body>
 
 </html>
