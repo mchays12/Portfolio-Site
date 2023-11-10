@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: var(--white);
+	background-color: #b4daff;
 	font-family: 'ABeeZee', san-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -15,6 +15,7 @@ body{
 	line-height: 1.6;
 	/*sets the line height to 1.6 */
 	flex-grow: 1;
+	height: 100%;
 }
 
 :root { /*color variable*/
@@ -143,6 +144,7 @@ button:focus, .button:focus {
 .work-header {
 	text-align: center;
 	font-size: 60px;
+	color: #05365b;
 }
 
 .work-header1 {
@@ -186,12 +188,69 @@ button:focus, .button:focus {
 }
 
 .page-footer {
-	height: 100%;
+	position: relative;
 	padding-bottom: 20px;
 	clear: both;
-	display: flex;
 	flex-direction: column;
 	text-align: center;
+}
+
+.social-media{
+	flex-direction: column;
+	text-align: center;
+	padding-top: 50px;
+	
+}
+
+.contact-form{
+	margin: auto;
+	background-color: #05365b;
+	max-width: 450px;
+	padding: 10px;
+	border-radius: 8px;
+	align-items: center
+}
+.contact-form{
+	margin-top: 100px;
+}
+
+#contact-email{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#contact-telephone{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#contact-message{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.contact-title{
+	color: white;
+}
+
+.contact-information{
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+label{
+	color: white;
+}
+
+form{
+	overflow: auto;
+	padding: 10px;
 }
 
 .project-list {
@@ -202,7 +261,7 @@ button:focus, .button:focus {
 
 .project-list_item {
 	flex-direction: column;
-	background: var(--experience-background);
+	background: #05365b;
 	padding: 20px;
 	border-radius: 40px;
 	margin-left: 20px;
@@ -233,14 +292,10 @@ section {
   padding: 40px 20px 20px;
   min-height: 66vh;
   max-width: 100%;
-  margin: auto
+  margin: auto;
+	color: white;
 }
 
-body{
-  font-family: montserrat;
-	color: white;
-	background-color: #b4daff;
-}
 .about{
 	color: rgb(58, 53, 53);
 	width: 50%;
@@ -256,10 +311,6 @@ body{
 .about {
 	flex-grow: 1;
 
-}
-
-.about, .page-footer{
-	flex-basis: 100px;
 }
 
 .profile_portrait {
@@ -278,19 +329,8 @@ body{
 	
 }
 
-.contact-form{
-	display: block;
-	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	text-align: center;
-	width: 50%;
-
-}
-
 #navbar {
-  background-color: #333; /* Black background color */
+  background-color: #05365b; /* Black background color */
   position: fixed; /* Make it stick/fixed */
   top: -25px; /* Hide the navbar 50 px outside of the top view */
   width: 100%; /* Full width */
