@@ -15,23 +15,13 @@
 </head>
 
 <body>
-  <header class="page-header"><!--Includes logo and navigation-->
-
-
-    <nav class="main-navigation page-header_item">
-      <input type="checkbox" id="check">
-      <label for="check">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo"></label>
-
+  <header class="page-header">
+    <nav id="navbar" class="main-navigation page-header_item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a class="active" href="index.html" role="menuitem" class="navigation-list_item navigation-list_item--active"
-            target="blank">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list_item" target="blank">About Me</a>
+          <a href="index.html" role="menuitem" class="navigation-list_item navigation-list_item" target="blank">
+            About Me
+          </a>
         </li>
         <li role="presentation">
           <a href="work.html" role="menuitem" class="navigation-list_item" target="blank">My Work</a>
@@ -43,29 +33,88 @@
     </nav>
   </header>
 
-  <div class="profile"> <!--Add Portrait Here-->
-    <img src="IMG/portrait.jpg" class="profile_portrait" alt="picture of me">
-    <h1>Hello World</h1>
-    <p>My name is Matthew and I am a <span>web</span> developer</p>
-    <a href="#">Check out some of my code</a>
-  </div>
+  <!--Add Portrait Here-->
 
-  <div> <!--Add button customization here-->
-    <a href="#">Default Link</a>
-    <a href="#" class="button"> Default Button</a>
-    <button class="button_secondary"> Secondary Button</button>
+
+
+  <section class="about">
+    <img src="IMG/portrait.jpg" class="profile_portrait" alt="picture of me">
+    <h1 id="about">About Me</h1>
+
+    <p>My name is Matthew Hays and I am a full stack developer.</p>
+    <p>
+      I'm familiar with HTML, CSS, JavaScript and TypeScript. Although I have programmed in TypeScript, I prefer to
+      program using JavaScript as it is what I am most familiar with.
+      <br />
+      <br />
+      Aside from programming, I like to do all things active. Whether it's snowboarding, working out, or hiking, if it
+      requires me to be outside, I like doing it! You can view my various skills below:
+      <br />
+      <br />
+    </p>
+
+    <table class="skills-list">
+      <thead>
+        <tr>
+          <th>Skills</th>
+          <th>Years of Experience</th>
+          <th>Level of Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Less than One</td>
+          <td>Novice</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Less than One</td>
+          <td>Novice</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Less than One</td>
+          <td>Novice</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="bubbles">
+    <img src="IMG/bubble_img.svg" alt="">
+    <img src="IMG/bubble_img.svg" alt="">
+    <img src="IMG/bubble_img.svg" alt="">
+    <img src="IMG/bubble_img.svg" alt="">
+    <img src="IMG/bubble_img.svg" alt="">
+    <img src="IMG/bubble_img.svg" alt="">
+    <img src="IMG/bubble_img.svg" alt="">
+
   </div>
 
   <footer class="page-footer">
-
     <div class="social-media">
-      <img src="IMG/githublogo.svg" alt="Github">
-      <img src="IMG/twitterlogo.svg" alt="twitter">
-      <img src="IMG/linkedinlogo.svg" alt="LinkedIn">
+      <img src="IMG/github_icon.svg" alt="Github">
+      <img src="IMG/twitter_icon.svg" alt="twitter">
+      <img src="IMG/linkedin_icon.svg " alt="LinkedIn">
     </div>
   </footer>
 
   <script src="JS/tota11y.min.js"></script>
+
+  <!--When the user scrolls down 20px from the top of the document, slide down the navbar
+  // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)-->
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+      } else {
+        document.getElementById("navbar").style.top = "-25px";
+      }
+    }
+  </script>
 </body>
 
 </html>
