@@ -57,12 +57,15 @@ h3 {
 }
 	
 a {
-	color: var(--dim-grey);
+	color: white;
 }
 
-a:visited {
-	/* visited link */
-	color: var(--dim-grey);
+p {
+	text-align: justify;
+}
+
+li {
+	color: white;
 }
 
 a:hover, a:focus {
@@ -149,6 +152,8 @@ button:focus, .button:focus {
 
 .work-header1 {
 	text-align: center;
+	color: white;
+	padding-top: 30px;
 	
 }
 
@@ -157,10 +162,17 @@ button:focus, .button:focus {
 	margin:auto;
 	margin-left: auto;
 	margin-right: auto;
+	color: white;
 }
 
 .work-description{
-	text-align: justify;
+	color: #ffffff;
+}
+
+.work-tech{
+	text-align: left;
+	margin: auto;
+	color: white;
 }
 
 .profile {
@@ -199,8 +211,9 @@ button:focus, .button:focus {
 	flex-direction: column;
 	text-align: center;
 	padding-top: 50px;
-	
+	text-decoration: none;
 }
+
 
 .contact-form{
 	margin: auto;
@@ -219,18 +232,35 @@ button:focus, .button:focus {
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
+	border-radius: 10px;
 }
 #contact-telephone{
 	display: inline-block;
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
+	border-radius: 10px;
 }
 #contact-message{
 	display: inline-block;
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
+	border-radius: 10px;
+}
+#contact_first-name{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+#contact_last-name{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
 }
 
 .contact-title{
@@ -244,6 +274,64 @@ button:focus, .button:focus {
 	width: 100%;
 }
 
+.bubbles img{
+	width: 50px;
+	animation: bubble 7s linear infinite;
+
+}
+.bubbles{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -140px;
+}
+
+@keyframes bubble{
+	0% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+	
+}
+
+.bubbles img:nth-child(1){
+	animation-delay: 0s;
+	width: 25px;
+}
+.bubbles img:nth-child(2){
+	animation-delay: -2.5s;
+}
+.bubbles img:nth-child(3){
+	animation-delay: -1.5s;
+	width: 35px;
+}
+.bubbles img:nth-child(4){
+	animation-delay: -3s;
+	width: 45px;
+}
+.bubbles img:nth-child(5){
+	animation-delay: -2s;
+}
+.bubbles img:nth-child(6){
+	animation-delay: -6s;
+	width: 25px;
+}
+.bubbles img:nth-child(7){
+	animation-delay: -4s;
+}
+
 label{
 	color: white;
 }
@@ -251,29 +339,6 @@ label{
 form{
 	overflow: auto;
 	padding: 10px;
-}
-
-.project-list {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 40px;
-}
-
-.project-list_item {
-	flex-direction: column;
-	background: #05365b;
-	padding: 20px;
-	border-radius: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
-	
-}
-
-.project-img{
-	width: 100%;
-	height: 250px;
-	object-fit: cover;
-	border-radius: 10%;
 }
 
 table{
@@ -288,12 +353,43 @@ table td{
 	text-align: justify;
 }
 
-section {
-  padding: 40px 20px 20px;
-  min-height: 66vh;
-  max-width: 100%;
-  margin: auto;
-	color: white;
+.project-list {
+	display: inline-block;
+	flex-direction: column;
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 200px;
+	
+}
+
+.project-list_item {
+	flex-direction: column;
+	background: #05365b;
+	width: 100%;
+	padding: 20px;
+	border-radius: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+
+.project-img{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 40px;
+	padding: 30px;
+}
+
+.work-buttons{
+	padding: 10px;
+}
+.w3-button_demo-red{
+	color: #0082e6;
+}
+
+.w3-section{
+	padding-top: 10px;
 }
 
 .about{
@@ -303,10 +399,11 @@ section {
 	text-align: justify;
 	 /* The power of flexboxes! */
 	 display: flex;
-	 display: -webkit-flex;
 	 flex-direction: column;
- 
-	 min-height: 100vh;
+	 padding: 40px 20px 20px;
+	 min-height: 66vh;
+	 max-width: 100%;
+	 margin: auto;
 }
 .about {
 	flex-grow: 1;
@@ -315,7 +412,7 @@ section {
 
 .profile_portrait {
 	float: center;
-	width: 350px;
+	width: 250px;
 	margin-right: 0;
 	margin-top: 30px;
 	border-radius: 50%;
@@ -384,6 +481,10 @@ a.active, a:hover{
   transition: .5s;
 }
 
+.contact-me{
+	color: #05365b;
+}
+
 @media (max-width: 952px){
   label.logo{
     font-size: 30px;
@@ -395,10 +496,7 @@ a.active, a:hover{
 		outline: none;
   }
 }
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
+@media (max-width: 200px){
   ul{
     position: fixed;
     width: 100%;
@@ -422,9 +520,16 @@ a.active, a:hover{
   a:hover,a.active{
     color: #0082e6;
   }
-  #check:checked ~ ul{
-    left: 0;
-  }
+	.bubbles{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: absolute;
+		bottom: -200px;
+	}
+
+ 
 }
 
 
