@@ -358,8 +358,8 @@ table td{
 	display: inline-block;
 	flex-direction: column;
 	text-align: center;
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
 	
 }
 
@@ -369,8 +369,6 @@ table td{
 	width: 100%;
 	padding: 20px;
 	border-radius: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
 	
 }
 
@@ -394,15 +392,15 @@ table td{
 
 .about{
 	color: rgb(58, 53, 53);
-	width: 50%;
 	align-items: center;
 	text-align: justify;
+	width: 80%;
 	 /* The power of flexboxes! */
 	 display: flex;
 	 flex-direction: column;
 	 padding: 40px 20px 20px;
 	 min-height: 66vh;
-	 max-width: 100%;
+		
 	 margin: auto;
 }
 .about {
@@ -528,6 +526,7 @@ a.active, a:hover{
 		position: absolute;
 		bottom: -200px;
 	}
+	
 
  
 }
