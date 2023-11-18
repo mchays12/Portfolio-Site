@@ -5,8 +5,12 @@
 	list-style: none;
 	box-sizing: border-box;
 }
+html, body{
+	overflow-x: hidden;
+}
 
 body{
+	position: relative;
 	background-color: rgb(255, 255, 255);
 	font-family: 'ABeeZee', san-serif;
 	font-weight: 400;
@@ -295,14 +299,14 @@ table td{
 .about{
 	color: rgb(58, 53, 53);
 	align-items: center;
-	margin: auto;
+	justify-content: center;
 	width: 80%;
 	 /* The power of flexboxes! */
 	 display: flex;
 	 flex-direction: column;
-	 flex-grow: 1;
 	 padding-bottom: 80px;
-	 min-width: 66vh;
+	 min-height: 66vh;
+	 margin: auto;
 }
 
 .about-description {
